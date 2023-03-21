@@ -22,3 +22,14 @@ CMD ["run.py"]
 ## COMANDOS PARA ACESSAR ESSA IMAGEM A PARTIR DE OUTRO CONTAINER
 ###
 #### docker container run -it --volumes-from=python-server debian cat /log/http-server.log
+
+## CRIANDO UMA TAG PARA IMAGEM ##
+
+### docker image tag ex-build-dev johnny/ex-build-dev:1.0.0
+
+## SUBINDO IMAGEM PARA CLOUD
+
+### ibmcloud login --sso
+### ibmcloud cr login
+### ibmcloud ks cluster config --cluster <NAME_CLUSTER>
+### docker push icr.io/<my_namespace>/<my_repo>:<my_tag>
