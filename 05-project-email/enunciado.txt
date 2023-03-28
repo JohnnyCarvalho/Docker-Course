@@ -1,0 +1,1 @@
+O objetivo desta aula é elaborar um projeto que simula o envio de e-mail através da ferramenta do docker utilizando um container para cada serviço.
